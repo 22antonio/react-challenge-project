@@ -7,7 +7,6 @@ import "./nav.css";
 
 const mapDispatchToProps = dispatch => ({
     commenceLogout(){
-        console.log('from commencelogout')
         dispatch(logoutUser())
     }
 });
