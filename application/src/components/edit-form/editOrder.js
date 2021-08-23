@@ -20,8 +20,6 @@ class EditOrder extends Component {
 			order_item: order.order_item,
 			quantity: order.quantity,
 		};
-
-		console.log(this.state);
 	}
 
 	menuItemChosen(event) {
@@ -57,16 +55,15 @@ class EditOrder extends Component {
 			<Template>
 				<div className="form-wrapper">
 					<form>
-						<label className="form-label">I'd like to order...</label>
+						<label className="form-label">I'd like to edit...</label>
 						<br />
-						<p>Current id {this.state.id}</p>
 						<select
 							value={this.state.order_item}
 							onChange={(event) => this.menuItemChosen(event)}
 							className="menu-select"
 						>
 							<option value="" defaultValue disabled hidden>
-								Lunch menu
+								Make another selection if you'd like
 							</option>
 							<option value="Soup of the Day">Soup of the Day</option>
 							<option value="Linguini With White Wine Sauce">
